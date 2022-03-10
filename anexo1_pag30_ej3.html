@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es"><!--Atributo lang para indicar el idioma-->
+
+<head><!--Etiquetas de cabecera-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript: anexo1</title>
+	<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body><!--Etiquetas de contenido-->
+
+
+<script>
+var a,b,op, resultado  ;
+
+var a = Number(prompt("Elije un número"));
+var b = Number(prompt ("Elije otro número"));
+op=  Number(prompt("Elije un numero entre 1-4"));
+
+var calcular = function(){
+switch (op) {
+	case 1:{
+		document.write(a+b);
+	};
+		
+		break;
+	case 2:{
+		document.write(a-b);
+	};
+		
+		break;
+	case 3:{
+		document.write(a*b);
+	};
+		
+		break;
+
+	case 4:{
+		document.write(a/b);
+	};
+		
+		break;
+
+	default:
+		break;
+		document.write("operacion no reconocida");
+}
+}
+
+
+
+var resultado ;
+
+ resultado=calcular();
+
+document.write(resultado);
+</script>
+
+
+
+	<footer><!--Pie de página-->
+	</footer>
+
+
+</body>
+</html>
